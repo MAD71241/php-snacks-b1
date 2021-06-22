@@ -48,21 +48,24 @@ $posts = [
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programma</title>
 </head>
+
 <body>
-    <?php 
+    <?php
     foreach ($posts as $day => $day_date) {
-    foreach ($day_date as $key => $value) {
-        ?> <h2> <?php echo $value["title"]; ?> </h2>
-        <h3><?php echo "Autore: " .$value["author"]; ?></h3>
-        <p><?php echo $value["text"]; ?></p> <?php
-    }
-} ?>
+        foreach ($day_date as $key => $value) {
+    ?> <h2> <?php echo $value["title"]; ?> </h2>
+            <h3><?php echo "Autore: " . $value["author"]; ?></h3>
+            <p><?php echo $value["text"]; ?></p> <?php
+                                                }
+                                            } ?>
 
 </body>
+
 </html>
