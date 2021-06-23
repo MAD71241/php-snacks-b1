@@ -33,7 +33,7 @@ Olimpia Milano - Cantù | 55-60 */
 
 for ($i=0; $i < count($games); $i++) {?>
 
-<h2> <?php echo $games[$i]["away"] ." - " .$games[$i]["home"] ." | " .$games[$i]["awayPts"] ." " .$games[$i]["homePts"] ; ?> </h2>
+<h2> <?php echo $games[$i]["away"] ." - " .$games[$i]["home"] ." | " .$games[$i]["awayPts"] ." - " .$games[$i]["homePts"] ; ?> </h2>
 
 <?php
 }

@@ -14,12 +14,12 @@ $checkerAt = strpos($_GET["email"], "@");
 $thisAge = intval($_GET["age"]);
 $is_access = "";
 
-if (strlen($_GET["name"]) > 3 && !$checkerDot === false && !$checkerAt === false && is_int($thisAge)) {
+if (isset($nameLength) && isset($checkerDot) && isset($thisAge) && isset($checkerAt)) {
+    if (strlen($_GET["name"]) > 3 && !$checkerDot === false && !$checkerAt === false && is_int($thisAge)) {
     $is_access = "access granted";
-} else if ($is_access == "") {
-    $is_access = "";
 } else {
     $is_access = "access denied";
+}
 }
 
 
