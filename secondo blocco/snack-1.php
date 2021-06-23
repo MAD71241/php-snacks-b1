@@ -41,7 +41,7 @@ foreach ($ads as $key => $value) {
     
 }
 
-$randIndex = rand(0,2);
+$randIndex = rand(0,(count($activeAds) -1));
 ?>
 
 <!DOCTYPE html>
